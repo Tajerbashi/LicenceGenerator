@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Licenser));
             this.HashPanel = new XanderUI.XUIGradientPanel();
-            this.HASHLBL = new System.Windows.Forms.Label();
             this.ComputerLBL = new System.Windows.Forms.Label();
+            this.HASHLBL = new System.Windows.Forms.Label();
             this.SystemInfo = new XanderUI.XUIButton();
             this.xuiButton3 = new XanderUI.XUIButton();
             this.Control = new XanderUI.XUIButton();
@@ -55,18 +55,6 @@
             this.HashPanel.TopRight = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.HashPanel.Visible = false;
             // 
-            // HASHLBL
-            // 
-            this.HASHLBL.AutoSize = true;
-            this.HASHLBL.BackColor = System.Drawing.Color.Transparent;
-            this.HASHLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HASHLBL.ForeColor = System.Drawing.Color.White;
-            this.HASHLBL.Location = new System.Drawing.Point(8, 28);
-            this.HASHLBL.Name = "HASHLBL";
-            this.HASHLBL.Size = new System.Drawing.Size(198, 16);
-            this.HASHLBL.TabIndex = 0;
-            this.HASHLBL.Text = "00000-00000-00000-00000-00000";
-            // 
             // ComputerLBL
             // 
             this.ComputerLBL.AutoSize = true;
@@ -78,6 +66,18 @@
             this.ComputerLBL.Size = new System.Drawing.Size(198, 16);
             this.ComputerLBL.TabIndex = 1;
             this.ComputerLBL.Text = "00000-00000-00000-00000-00000";
+            // 
+            // HASHLBL
+            // 
+            this.HASHLBL.AutoSize = true;
+            this.HASHLBL.BackColor = System.Drawing.Color.Transparent;
+            this.HASHLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HASHLBL.ForeColor = System.Drawing.Color.White;
+            this.HASHLBL.Location = new System.Drawing.Point(8, 28);
+            this.HASHLBL.Name = "HASHLBL";
+            this.HASHLBL.Size = new System.Drawing.Size(198, 16);
+            this.HASHLBL.TabIndex = 0;
+            this.HASHLBL.Text = "00000-00000-00000-00000-00000";
             // 
             // SystemInfo
             // 
@@ -184,7 +184,7 @@
             this.Name = "Licenser";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "لایسنسر";
+            this.Text = "Licenser";
             this.Load += new System.EventHandler(this.Licenser_Load);
             this.HashPanel.ResumeLayout(false);
             this.HashPanel.PerformLayout();

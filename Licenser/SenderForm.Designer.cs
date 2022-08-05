@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SenderForm));
             this.HashCodeTXT = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.TimeTXT = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.LicTXT = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.TypeBox = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.Trial = new DevComponents.Editors.ComboItem();
             this.Full = new DevComponents.Editors.ComboItem();
+            this.Trial = new DevComponents.Editors.ComboItem();
             this.SendBTN = new XanderUI.XUIButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
@@ -109,14 +110,6 @@
             this.TypeBox.SelectedIndexChanged += new System.EventHandler(this.TypeBox_SelectedIndexChanged);
             this.TypeBox.TabIndexChanged += new System.EventHandler(this.TypeBox_TabIndexChanged);
             // 
-            // Trial
-            // 
-            this.Trial.FontStyle = System.Drawing.FontStyle.Bold;
-            this.Trial.Image = global::Licenser.Properties.Resources.Icons_Land_Vista_Elements_Wait;
-            this.Trial.Text = "Trial";
-            this.Trial.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Trial.TextLineAlignment = System.Drawing.StringAlignment.Center;
-            // 
             // Full
             // 
             this.Full.FontStyle = System.Drawing.FontStyle.Bold;
@@ -124,6 +117,14 @@
             this.Full.Text = "Full";
             this.Full.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Full.TextLineAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // Trial
+            // 
+            this.Trial.FontStyle = System.Drawing.FontStyle.Bold;
+            this.Trial.Image = global::Licenser.Properties.Resources.Icons_Land_Vista_Elements_Wait;
+            this.Trial.Text = "Trial";
+            this.Trial.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Trial.TextLineAlignment = System.Drawing.StringAlignment.Center;
             // 
             // SendBTN
             // 
@@ -247,6 +248,7 @@
             this.Controls.Add(this.TimeTXT);
             this.Controls.Add(this.HashCodeTXT);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SenderForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
